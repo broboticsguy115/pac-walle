@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/player/walle/lens"
+	"$translucent" "1"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.3 0.3 0.3]"
+	"$halflambert" 1
+}
