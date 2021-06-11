@@ -1,0 +1,30 @@
+
+"VertexLitGeneric"
+{
+	"$basetexture" "models/player/walle/wheel"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.1 0.1 0.1]"
+	"$halflambert" 1
+	"$angle" "90"
+	"$centera" "[0.5 -0.5]"
+	"$wheelspeed" "1"
+
+	"Proxies"
+	{
+		"LinearRamp"
+		{
+			"rate" 45
+			"initialValue" 0.0
+			"resultVar" "$angle"	
+		}
+	
+
+		"TextureTransform"
+		{
+			"translateVar" "$translate"
+			"rotateVar" "$angle"
+			"centerVar" "$centera"
+			"resultVar" "$basetexturetransform"
+		}
+	}
+}
